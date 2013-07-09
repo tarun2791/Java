@@ -1,0 +1,69 @@
+Keywords in Java 7
+
+There are 50 keywords in Java
+
+abstract
+assert (added in Java 1.4)
+
+boolean 
+break
+byte
+
+case
+catch
+char
+class
+const (never used)
+continue
+
+do
+default
+double
+
+else
+enum (added in Java 5.0)
+extends
+
+final
+finally
+float
+for
+
+goto (never used)
+
+if
+implements
+interface
+instanceof
+int
+import
+
+long
+
+native
+new
+
+package
+private
+public 
+protected
+ 
+return
+
+super
+static
+strictfp (added in Java 1.2)
+short
+switch
+synchronized
+
+this
+throw
+throws
+transient
+try
+
+void 
+volatile
+
+while

@@ -1,0 +1,13 @@
+<automation-configuration>
+	<mapping>
+		<class-name>com.tk20.seleniumtestassessment.courses.Dashboard_KeywordEvents</class-name>
+		<or-file>/externalFiles/Object_Repository/Dashboard_OR</or-file>
+		<excel-file>/externalFiles/xls/Dashboard_Suite</excel-file>
+	</mapping>
+	<mapping>
+		<class-name>com.tk20.seleniumtestassessment.courses.Assignment_KeywordEvents</class-name>
+		<or-file>/externalFiles/Object_Repository/Assignment_OR</or-file>
+		<excel-file>/externalFiles/xls/Assignment_Suite</excel-file>
+	</mapping>
+	<excel-suite>/externalFiles/xls/Suite</excel-suite>
+</automation-configuration>

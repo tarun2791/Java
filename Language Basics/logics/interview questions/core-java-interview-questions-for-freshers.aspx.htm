@@ -1,0 +1,1131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:fb="http://ogp.me/ns/fb#" xmlns:o="" xmlns:jsp=""><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>Core java interview questions and answers for freshers</title>
+		<meta content="Microsoft Visual Studio.NET 7.0" name="GENERATOR">
+		<meta content="Visual Basic 7.0" name="CODE_LANGUAGE">
+		<meta content="JavaScript" name="vs_defaultClientScript">
+		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<meta content="Core java interview questions and answers for freshers - What are the basic features of java?, How java becomes object oriented?, How java becomes robust?, How a Java program compiles?........" name="description">
+		<meta content="Core java interview questions and answers for freshers, Core java interview questions, Core java interview" name="keywords">
+		<meta content="All" name="robots">
+		<link href="core-java-interview-questions-for-freshers.aspx_files/styles.css" type="text/css" rel="stylesheet">
+	<style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}
+.fb_invisible{display:none}
+.fb_reset{background:none;border-spacing:0;border:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}
+.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}
+.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}
+.fb_dialog_content{background:#fff;color:#333}
+.fb_dialog_close_icon{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yA/x/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/y6/x/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px;top:8px\9;right:7px\9}
+.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}
+.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}
+.fb_dialog_close_icon:hover{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yA/x/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/y6/x/s816eWC-2sl.gif)}
+.fb_dialog_close_icon:active{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yA/x/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/y6/x/s816eWC-2sl.gif)}
+.fb_dialog_loader{background-color:#f2f2f2;border:1px solid #606060;font-size:24px;padding:20px}
+.fb_dialog_top_left,
+.fb_dialog_top_right,
+.fb_dialog_bottom_left,
+.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}
+/* @noflip */
+.fb_dialog_top_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yR/x/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}
+/* @noflip */
+.fb_dialog_top_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yR/x/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}
+/* @noflip */
+.fb_dialog_bottom_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yR/x/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}
+/* @noflip */
+.fb_dialog_bottom_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yR/x/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}
+.fb_dialog_vert_left,
+.fb_dialog_vert_right,
+.fb_dialog_horiz_top,
+.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}
+.fb_dialog_vert_left,
+.fb_dialog_vert_right{width:10px;height:100%}
+.fb_dialog_vert_left{margin-left:-10px}
+.fb_dialog_vert_right{right:0;margin-right:-10px}
+.fb_dialog_horiz_top,
+.fb_dialog_horiz_bottom{width:100%;height:10px}
+.fb_dialog_horiz_top{margin-top:-10px}
+.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}
+.fb_dialog_iframe{line-height:0}
+.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3b5998;color:#fff;font-size:14px;font-weight:bold;margin:0}
+.fb_dialog_content .dialog_title > span{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yD/x/Cou7n-nqK52.gif)
+no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}
+body.fb_hidden{-webkit-transform:none;height:100%;margin:0;left:-10000px;overflow:visible;position:absolute;top:-10000px;width:100%
+}
+.fb_dialog.fb_dialog_mobile.loading{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yc/x/3rhSv5V8j3o.gif)
+white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}
+.fb_dialog.fb_dialog_mobile.loading.centered{max-height:590px;min-height:590px;max-width:500px;min-width:500px}
+#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}
+#fb-root #fb_dialog_ipad_overlay.hidden{display:none}
+.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}
+.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0 0, 0 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}
+.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%
+}
+.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px
+}
+.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px
+}
+.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0 0, 0 100%, from(#4966A6),
+color-stop(0.5, #355492), to(#2A4887));border:1px solid #29447e;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset,
+rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}
+.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}
+.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}
+.fb_dialog_content .dialog_content{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yJ/x/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}
+.fb_dialog_content .dialog_footer{background:#f2f2f2;border:1px solid #555;border-top-color:#ccc;height:40px}
+#fb_dialog_loader_close{float:left}
+.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}
+.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}
+.fb_iframe_widget{position:relative;display:-moz-inline-block;display:inline-block}
+.fb_iframe_widget iframe{position:absolute}
+.fb_iframe_widget_lift{z-index:1}
+.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify;vertical-align:text-bottom}
+.fb_hide_iframes iframe{position:relative;left:-10000px}
+.fb_iframe_widget_loader{position:relative;display:inline-block}
+.fb_iframe_widget_fluid{display:inline}
+.fb_iframe_widget_fluid span{width:100%}
+.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}
+.fb_iframe_widget_loader .FB_Loader{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yJ/x/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_button_simple,
+.fb_button_simple_rtl{background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yH/x/eIpbnVKI9lR.png);background-repeat:no-repeat;cursor:pointer;outline:none;text-decoration:none}
+.fb_button_simple_rtl{background-position:right 0}
+.fb_button_simple .fb_button_text{margin:0 0 0 20px;padding-bottom:1px}
+.fb_button_simple_rtl .fb_button_text{margin:0 10px 0 0}
+a.fb_button_simple:hover .fb_button_text,
+a.fb_button_simple_rtl:hover .fb_button_text,
+.fb_button_simple:hover .fb_button_text,
+.fb_button_simple_rtl:hover .fb_button_text{text-decoration:underline}
+.fb_button,
+.fb_button_rtl{background:#29447e url(http://static.ak.fbcdn.net/rsrc.php/v2/yl/x/FGFbc80dUKj.png);background-repeat:no-repeat;cursor:pointer;display:inline-block;padding:0 0 0 1px;text-decoration:none;outline:none}
+.fb_button .fb_button_text,
+.fb_button_rtl .fb_button_text{background:#5f78ab url(http://static.ak.fbcdn.net/rsrc.php/v2/yl/x/FGFbc80dUKj.png);border-top:solid 1px #879ac0;border-bottom:solid 1px #1a356e;color:#fff;display:block;font-family:"lucida grande",tahoma,verdana,arial,sans-serif;font-weight:bold;padding:2px 6px 3px 6px;margin:1px 1px 0 21px;text-shadow:none}
+a.fb_button,
+a.fb_button_rtl,
+.fb_button,
+.fb_button_rtl{text-decoration:none}
+a.fb_button:active .fb_button_text,
+a.fb_button_rtl:active .fb_button_text,
+.fb_button:active .fb_button_text,
+.fb_button_rtl:active .fb_button_text{border-bottom:solid 1px #29447e;border-top:solid 1px #45619d;background:#4f6aa3;text-shadow:none}
+.fb_button_xlarge,
+.fb_button_xlarge_rtl{background-position:left -60px;font-size:24px;line-height:30px}
+.fb_button_xlarge .fb_button_text{padding:3px 8px 3px 12px;margin-left:38px}
+a.fb_button_xlarge:active{background-position:left -99px}
+.fb_button_xlarge_rtl{background-position:right -268px}
+.fb_button_xlarge_rtl .fb_button_text{padding:3px 8px 3px 12px;margin-right:39px}
+a.fb_button_xlarge_rtl:active{background-position:right -307px}
+.fb_button_large,
+.fb_button_large_rtl{background-position:left -138px;font-size:13px;line-height:16px}
+.fb_button_large .fb_button_text{margin-left:24px;padding:2px 6px 4px 6px}
+a.fb_button_large:active{background-position:left -163px}
+.fb_button_large_rtl{background-position:right -346px}
+.fb_button_large_rtl .fb_button_text{margin-right:25px}
+a.fb_button_large_rtl:active{background-position:right -371px}
+.fb_button_medium,
+.fb_button_medium_rtl{background-position:left -188px;font-size:11px;line-height:14px}
+a.fb_button_medium:active{background-position:left -210px}
+.fb_button_medium_rtl{background-position:right -396px}
+.fb_button_text_rtl,
+.fb_button_medium_rtl .fb_button_text{padding:2px 6px 3px 6px;margin-right:22px}
+a.fb_button_medium_rtl:active{background-position:right -418px}
+.fb_button_small,
+.fb_button_small_rtl{background-position:left -232px;font-size:10px;line-height:10px}
+.fb_button_small .fb_button_text{padding:2px 6px 3px;margin-left:17px}
+a.fb_button_small:active,
+.fb_button_small:active{background-position:left -250px}
+.fb_button_small_rtl{background-position:right -440px}
+.fb_button_small_rtl .fb_button_text{padding:2px 6px;margin-right:18px}
+a.fb_button_small_rtl:active{background-position:right -458px}
+.fb_share_count_wrapper{position:relative;float:left}
+.fb_share_count{background:#b0b9ec none repeat scroll 0 0;color:#333;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;text-align:center}
+.fb_share_count_inner{background:#e8ebf2;display:block}
+.fb_share_count_right{margin-left:-1px;display:inline-block}
+.fb_share_count_right .fb_share_count_inner{border-top:solid 1px #e8ebf2;border-bottom:solid 1px #b0b9ec;margin:1px 1px 0 1px;font-size:10px;line-height:10px;padding:2px 6px 3px;font-weight:bold}
+.fb_share_count_top{display:block;letter-spacing:-1px;line-height:34px;margin-bottom:7px;font-size:22px;border:solid 1px #b0b9ec}
+.fb_share_count_nub_top{border:none;display:block;position:absolute;left:7px;top:35px;margin:0;padding:0;width:6px;height:7px;background-repeat:no-repeat;background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yP/x/bSOHtKbCGYI.png)}
+.fb_share_count_nub_right{border:none;display:inline-block;padding:0;width:5px;height:10px;background-repeat:no-repeat;background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/x/i_oIVTKMYsL.png);vertical-align:top;background-position:right 5px;z-index:10;left:2px;margin:0 2px 0 0;position:relative}
+.fb_share_no_count{display:none}
+.fb_share_size_Small .fb_share_count_right .fb_share_count_inner{font-size:10px}
+.fb_share_size_Medium .fb_share_count_right .fb_share_count_inner{font-size:11px;padding:2px 6px 3px;letter-spacing:-1px;line-height:14px}
+.fb_share_size_Large .fb_share_count_right .fb_share_count_inner{font-size:13px;line-height:16px;padding:2px 6px 4px;font-weight:normal;letter-spacing:-1px}
+.fb_share_count_hidden .fb_share_count_nub_top,
+.fb_share_count_hidden .fb_share_count_top,
+.fb_share_count_hidden .fb_share_count_nub_right,
+.fb_share_count_hidden .fb_share_count_right{visibility:hidden}
+.fb_connect_bar_container div,
+.fb_connect_bar_container span,
+.fb_connect_bar_container a,
+.fb_connect_bar_container img,
+.fb_connect_bar_container strong{background:none;border-spacing:0;border:0;direction:ltr;font-style:normal;font-variant:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal;vertical-align:baseline}
+.fb_connect_bar_container{position:fixed;left:0 !important;right:0 !important;height:42px !important;padding:0 25px !important;margin:0 !important;vertical-align:middle !important;border-bottom:1px solid #333 !important;background:#3b5998 !important;z-index:99999999 !important;overflow:hidden !important}
+.fb_connect_bar_container_ie6{position:absolute;top:expression(document.compatMode=="CSS1Compat"? document.documentElement.scrollTop+"px":body.scrollTop+"px")}
+.fb_connect_bar{position:relative;margin:auto;height:100%;width:100%;padding:6px 0 0 0 !important;background:none;color:#fff !important;font-family:"lucida grande", tahoma, verdana, arial, sans-serif !important;font-size:13px !important;font-style:normal !important;font-variant:normal !important;font-weight:normal !important;letter-spacing:normal !important;line-height:1 !important;text-decoration:none !important;text-indent:0 !important;text-shadow:none !important;text-transform:none !important;white-space:normal !important;word-spacing:normal !important}
+.fb_connect_bar a:hover{color:#fff}
+.fb_connect_bar .fb_profile img{height:30px;width:30px;vertical-align:middle;margin:0 6px 5px 0}
+.fb_connect_bar div a,
+.fb_connect_bar span,
+.fb_connect_bar span a{color:#bac6da;font-size:11px;text-decoration:none}
+.fb_connect_bar .fb_buttons{float:right;margin-top:7px}
+.fb_edge_widget_with_comment{position:relative;*z-index:1000}
+.fb_edge_widget_with_comment span.fb_edge_comment_widget{position:absolute}
+.fb_edge_widget_with_comment span.fb_send_button_form_widget{z-index:1}
+.fb_edge_widget_with_comment span.fb_send_button_form_widget .FB_Loader{left:0;top:1px;margin-top:6px;margin-left:0;background-position:50% 50%;background-color:#fff;height:150px;width:394px;border:1px #666 solid;border-bottom:2px solid #283e6c;z-index:1}
+.fb_edge_widget_with_comment span.fb_send_button_form_widget.dark .FB_Loader{background-color:#000;border-bottom:2px solid #ccc}
+.fb_edge_widget_with_comment span.fb_send_button_form_widget.siderender
+.FB_Loader{margin-top:0}
+.fbpluginrecommendationsbarleft,
+.fbpluginrecommendationsbarright{position:fixed !important;bottom:0;z-index:999}
+/* @noflip */
+.fbpluginrecommendationsbarleft{left:10px}
+/* @noflip */
+.fbpluginrecommendationsbarright{right:10px}</style></head>
+	<body>
+		<table class="wide-table">
+			<tbody><tr>
+				<td>
+					<div align="center">
+						<h1>Core java interview questions and answers for freshers</h1>
+					</div>
+				</td>
+			</tr>
+		</tbody></table>
+		
+
+<div class=" fb_reset" id="fb-root"><div style="position: absolute; top: -10000px; height: 0pt; width: 0pt;"><div><iframe src="core-java-interview-questions-for-freshers.aspx_files/xd_arbiter.htm" style="border: medium none;" tab-index="-1" title="Facebook Cross Domain Communication Frame" aria-hidden="true" allowtransparency="true" name="fb_xdm_frame_http" frameborder="0" scrolling="no"></iframe><iframe src="core-java-interview-questions-for-freshers.aspx_files/xd_arbiter_002.htm" style="border: medium none;" tab-index="-1" title="Facebook Cross Domain Communication Frame" aria-hidden="true" allowtransparency="true" name="fb_xdm_frame_https" frameborder="0" scrolling="no"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0pt; width: 0pt;"><div></div></div></div>
+<script src="core-java-interview-questions-for-freshers.aspx_files/all.js" id="facebook-jssdk"></script><script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+<script type="text/javascript"><!--
+
+function deleteCheck(inputString) {
+if (confirm("Are you sure you would like to delete: " + inputString + "?")) {
+    return true;
+}
+return false;
+}
+
+// -->
+</script>
+
+<!-- google_ad_section_start(weight=ignore) -->
+		<table id="TableTop" align="center" bgcolor="white" border="0" cellpadding="0" cellspacing="0" width="960px">
+			<tbody><tr>
+				<td bgcolor="#ffffff"> 
+					<table id="Table1" border="0" cellpadding="0" cellspacing="0" height="1" width="960">
+						<tbody><tr>
+							<td style="padding: 5px 15px;" valign="top"><a href="http://www.careerride.com/"><img src="core-java-interview-questions-for-freshers.aspx_files/logo.gif" border="0" height="21" width="194"></a></td>
+														<td style="padding: 5px 15px 15px;">
+							<fb:like class="fb_edge_widget_with_comment fb_iframe_widget" fb-xfbml-state="rendered" send="false" layout="button_count" show_faces="false"><span style="height: 20px; width: 72px;"><iframe src="core-java-interview-questions-for-freshers.aspx_files/like.htm" class="fb_ltr" title="Like this content on Facebook." style="border: medium none; overflow: hidden; height: 20px; width: 72px;" name="f2833d1af0609dc" id="f213194283b62b8" scrolling="no"></iframe></span></fb:like>
+							</td>
+
+							<td align="right">
+							<form action="http://www.google.com/cse" id="cse-search-box" target="_blank">
+							<input name="cx" value="partner-pub-6836604883057248:cw8j3-f6czk" id="Hidden1" type="hidden">
+							<input name="ie" value="ISO-8859-1" id="Hidden2" type="hidden">
+							<input style="border: 1px solid rgb(126, 157, 185); padding: 2px; background: url(&quot;http://www.google.com/cse/intl/en/images/google_custom_search_watermark.gif&quot;) no-repeat scroll left center rgb(255, 255, 255);" name="q" size="30" id="Text1" type="text"><input name="sa" value="Search" id="Submit1" type="submit">
+							<script type="text/javascript" src="core-java-interview-questions-for-freshers.aspx_files/brand"></script><input value="careerride.com/core-java-interview-questions-for-freshers.aspx" name="siteurl" type="hidden"><input value="www.google.co.in/url?sa=t&amp;rct=j&amp;q=java%20interview%20programs%20for%20fresher&amp;source=web&amp;cd=1&amp;ved=0CC4QFjAA&amp;url=http%3A%2F%2Fcareerride.com%2Fcore-java-interview-questions-for-freshers.aspx&amp;ei=BLcdUYnGH4KsrAfgBQ&amp;usg=AFQjCNH5ChDGa9bqcacQm7Wv3Hkc4jSw4g&amp;bvm=bv.42553238,d.bmk&amp;cad=rja" name="ref" type="hidden"><input name="ss" type="hidden">
+							</form>
+							</td>
+							
+						</tr>
+					</tbody></table>
+				</td>
+			</tr>
+			<tr>
+				<td>&nbsp;
+				</td>
+			</tr>
+			<tr>
+				<td style="border-bottom: 1px solid rgb(204, 204, 204);" bgcolor="#ffffff">
+					<div id="list_wrapper2" align="left">
+						<ul>
+							<li>
+								<a class="abtus_btn" href="http://careerride.com/Technical-Interview-Questions.aspx">Interview Q&amp;A</a>
+							</li>
+							<li>
+								<a class="abtus_btn" href="http://careerride.com/interview-videos.aspx">Videos</a>
+							</li>							
+							<li>
+								<a class="abtus_btn" href="http://careerride.com/placement-papers.aspx">Placement papers</a>
+							</li>
+							<li>
+								<a class="abtus_btn" href="http://careerride.com/HR.aspx">HR interview</a>
+							</li>
+							<li>
+								<a class="abtus_btn" href="http://careerride.com/CV-Writing-tips-Sample.aspx">CV</a>
+							</li>
+							<li>
+								<a class="abtus_btn" href="http://careerride.com/Cover-Letter-Tips-Sample.aspx">Cover letter</a>
+							</li>
+							<li>
+								<a class="abtus_btn" href="http://careerride.com/Group-Discussion.aspx">GD</a>
+							</li>
+							<li>
+								<a class="abtus_btn" href="http://careerride.com/career-aptitude-test.aspx">Aptitude</a>
+							</li>
+							<li>
+								<a class="abtus_btn" href="http://careerride.com/Online-practice-test.aspx"><b>Online practice tests</b></a>
+							</li>
+							<li>
+								<a class="abtus_btn" href="http://careerride.com/Java-Tutorial.aspx">Java tutorial</a>
+							</li>
+							<li>
+								<a class="abtus_btn" href="http://careerride.com/ASPNet-Tutorial.aspx">.NET tutorial</a>
+							</li>
+							<li>
+								<a class="abtus_btn" href="http://careerride.com/user-login.aspx">Log In</a>
+							</li>
+
+						</ul>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td bgcolor="#ffffff">
+					<table id="Table2" border="0" cellpadding="0" cellspacing="1" width="960">
+						<tbody><tr>
+							<td> 
+								<script type="text/javascript"><!--
+					google_ad_client = "pub-6836604883057248";
+					/* 728x90, created 2/12/10 */
+					google_ad_slot = "5324688323";
+					google_ad_width = 728;
+					google_ad_height = 90;
+					//-->
+								</script>
+								<script src="core-java-interview-questions-for-freshers.aspx_files/show_ads.js" type="text/javascript">
+								</script><ins style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px"><ins id="aswift_0_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left: 0pt; position: absolute; top: 0pt;" frameborder="0" height="90" scrolling="no" width="728"></iframe></ins></ins>
+							</td>
+							<td>
+							</td><td class="paratitle1">
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-6836604883057248";
+/* 200x90, created 6/10/09 */
+google_ad_slot = "2076713573";
+google_ad_width = 200;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript" src="core-java-interview-questions-for-freshers.aspx_files/show_ads.js">
+</script><ins style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:200px"><ins id="aswift_1_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:200px"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left: 0pt; position: absolute; top: 0pt;" frameborder="0" height="90" scrolling="no" width="200"></iframe></ins></ins>
+
+							</td>
+							
+						</tr>
+					</tbody></table>
+				</td>
+			</tr>
+		</tbody></table>
+
+
+<!--– google_ad_section_end –-->
+		<table id="Table2" class="wide-table" border="0" cellpadding="0" cellspacing="0" height="461" width="100%">
+			<tbody><tr>
+				<td valign="top" width="84%">
+					<table id="Table5" border="0" cellpadding="0" cellspacing="0" width="100%">
+						<tbody><tr>
+							<td class="paratitle" align="left" background="core-java-interview-questions-for-freshers.aspx_files/hdbg.gif" height="5" valign="middle" width="20">
+								<h2>Core&nbsp;java&nbsp;interview&nbsp;questions&nbsp;and&nbsp;answers&nbsp;for&nbsp;freshers</h2>
+							</td>
+						</tr>
+						<tr id="TR2">
+							<td class="paratitle1" height="30" width="100%">
+								<p><br>
+									<strong><em><strong><em>Core java interview questions for freshers - contributed by Rohit 
+													Srivastava</em></strong></em></strong></p>
+								<p><a href="http://careerride.com/core-java-interview-questions-for-freshers.aspx#1">What is Polymorphism?</a><br>
+									<a href="http://careerride.com/core-java-interview-questions-for-freshers.aspx#2">Explain garbage 
+										collection.</a><br>
+									<a href="http://careerride.com/core-java-interview-questions-for-freshers.aspx#3">What is an immutable 
+										object?</a><br>
+									<a href="http://careerride.com/core-java-interview-questions-for-freshers.aspx#4">How are this() and 
+										super() used with constructors?</a><br>
+									<a href="http://careerride.com/core-java-interview-questions-for-freshers.aspx#5">What are Access 
+										Specifiers available in Java?</a><br>
+									<a href="http://careerride.com/core-java-interview-questions-for-freshers.aspx#6">What is Constructor?</a><br>
+									<a href="http://careerride.com/core-java-interview-questions-for-freshers.aspx#7">What are the List 
+										interface and its main implementation?</a><br>
+									<a href="http://careerride.com/core-java-interview-questions-for-freshers.aspx#8">Explain the user 
+										defined Exceptions.</a><br>
+									<a href="http://careerride.com/core-java-interview-questions-for-freshers.aspx#9">Describe life cycle of 
+										thread.</a><br>
+									<a href="http://careerride.com/core-java-interview-questions-for-freshers.aspx#10">What is an Applets?</a><br>
+									<a href="http://careerride.com/core-java-interview-questions-for-freshers.aspx#11">What is the Set 
+										interface?</a><br>
+									<a href="http://careerride.com/core-java-interview-questions-for-freshers.aspx#12">What is a HashSet and 
+										TreeSet?</a><br>
+									<a href="http://careerride.com/core-java-interview-questions-for-freshers.aspx#13">How do you decide when 
+										to use HashMap and when to use TreeMap and what is difference between these 
+										two?</a><br>
+									<a href="http://careerride.com/core-java-interview-questions-for-freshers.aspx#14">What is the Comparable 
+										interface?</a><br>
+									<a href="http://careerride.com/core-java-interview-questions-for-freshers.aspx#15">When should I use 
+										abstract classes and when should I use interfaces?</a><br>
+									<a href="http://careerride.com/core-java-interview-questions-for-freshers.aspx#16">Explain the 
+										Polymorphism principle.</a><br>
+									<a href="http://careerride.com/core-java-interview-questions-for-freshers.aspx#17">What are the 
+										difference between throw and throws?</a><br>
+									<a href="http://careerride.com/core-java-interview-questions-for-freshers.aspx#18">What is difference 
+										between preemptive scheduling and time slicing?</a><br>
+									<a href="http://careerride.com/core-java-interview-questions-for-freshers.aspx#19">Explain traversing 
+										through a collector using Iterator.</a><br>
+									<a href="http://careerride.com/core-java-interview-questions-for-freshers.aspx#20">What are the principle 
+										concepts of OOPS?</a></p>
+								<h3 id="1">What is Polymorphism?</h3>
+								<p>The Polymorphism can be referred as one name many forms. It is the ability of 
+									methods to behave differently, depending upon the object who is calling it. The 
+									key features of Polymorphism are:</p>
+								<ul>
+									<li>
+									Allows using one interface for multiple implementations.
+									</li><li>
+									Supports Method Overloading: Multiple methods with same name, but different 
+									formal argument.
+									</li><li>
+										Supports Method Overridden: Multiple methods have the same name, same return 
+										type, and same formal argument list.</li></ul>
+								<h3 id="2">Explain garbage collection.</h3>
+								<p>The Java uses the garbage collection to free the memory. By cleaning those 
+									objects that is no longer reference by any of the program. Step involve in 
+									cleaning up the garbage collection:</p>
+								<ul>
+									<li>
+									Garbage Object Collection: first step is to collection and group all those 
+									object which are no more reference with any of the program. We can use the 
+									different methods to collect the garbage object like using runtime.gc() or 
+									system.gc().
+									</li><li>
+										Run Finalize method: To free up those object which is collected by the garbage 
+										collector java must execute the Finalize method to delete all those dynamically 
+										created object</li></ul>
+								<h3 id="3">What is an immutable object?</h3>
+								<p>An immutable object is one that we cannot change once it is created. Steps 
+									involved in creation of an immutable object are:</p>
+								<ul>
+									<li>
+									Make all of its data fields private.
+									</li><li>
+										Methods which can perform changes in any of the data fields after the 
+										construction of object must be avoided.</li></ul>
+								<h3 id="4">How are this() and super() used with constructors?</h3>
+								<p>this() Constructors: is used to pointing the current class instance.</p>
+								<ul>
+									<li>
+									Can be used with variables or methods.
+									</li><li>
+									Used to call constructer of same class.
+									</li><li>
+										Private variable cannot be accessed using this().</li></ul>
+								<p>super() Constructer: is used to call constructor of parent class.</p>
+								<ul>
+									<li>
+									Must be the first statement in the body of constructor.
+									</li><li>
+										Using this we can access private variables in the super class.</li></ul>
+								<h3 id="5">What are Access Specifiers available in Java?</h3>
+								<p>Java offers four access specifiers, described below:</p>
+								<ul>
+									<li>
+										<strong>Public:</strong>
+									public classes, methods, and fields can be accessed by every class.
+									</li><li>
+										<strong>Protected:</strong>
+									protected methods and fields can only be accessed within the same class to 
+									which the methods and fields belong.
+									</li><li>
+										<strong>Default (no specifier):</strong>
+									when we do not set access to specific level, then such a class, method, or 
+									field will be accessible from inside the same package to which the class, 
+									method, or field belongs.
+									</li><li>
+										<strong>Private:</strong> private methods and fields can only be accessed 
+										within the same class to which the methods and fields belong. Private methods 
+										and fields are not inherited by subclasses.</li></ul>
+								<h3 id="6">What is Constructor?</h3>
+								<p>A constructor is used to initialize a newly created object.</p>
+								<ul>
+									<li>
+									It is called just after the memory is allocated for the object.
+									</li><li>
+									It can be used to initialize the objects.
+									</li><li>
+									It is not mandatory to write a constructor for the class.
+									</li><li>
+									Name of constructor is same as the class name.
+									</li><li>
+									Cannot be inherited.
+									</li><li>
+										Constructor is invoked whenever an object of its associated class is created.</li></ul>
+								<h3 id="7">What are the List interface and its main implementation?</h3>
+								<p>The List helps in collections of objects. Lists may contain duplicate elements. 
+									The main implementations of the List interface are as follows:</p>
+								<ul>
+									<li>
+										<strong>ArrayList:</strong>
+									Resizable-array implementation of the List interface.
+									</li><li>
+										<strong>Vector:</strong>
+									Synchronized resizable-array implementation of the List.
+									</li><li>
+										<strong>LinkedList:</strong> Doubly-linked list implementation of the List 
+										interface. Better performance than the ArrayList implementation when elements 
+										are inserted or deleted timely.
+									</li>
+								</ul>
+								<h3 id="8">Explain the user defined Exceptions.</h3>
+								<p>User Defined Exceptions are exceptions defined by the user for specific 
+									purposed. This allows custom exceptions to be generated and caught in the same 
+									way as normal exceptions. While defining a User Defined Exception, we need to 
+									take care of the following aspects:</p>
+								<ul>
+									<li>
+									It should be extend from Exception class.
+									</li><li>
+										Use toString() method to display information about the exception.</li></ul>
+								<h3 id="9">Describe life cycle of thread.</h3>
+								<p>Threads follow the single flow of control. A thread is execution in a program. 
+									The life cycles of threads are listed below:</p>
+								<ul>
+									<li>
+										<strong>Newborn state:</strong>
+									After the creations of Thread instance the thread is in this state but before 
+									the start() method invocation. Thread is considered not alive in this phase.
+									</li><li>
+										<strong>Runnable state:</strong>
+									A thread starts its life from Runnable state. After the invoking of start() 
+									method thread enters Runnable state.
+									</li><li>
+										<strong>Running state:</strong>
+									A thread first enters Runnable state.
+									</li><li>
+										<strong>Blocked state:</strong>
+									A thread can enter in this state because of waiting the resources that are hold 
+									by another thread.
+									</li><li>
+										<strong>Dead state:</strong> A thread can be considered dead when its run() 
+										method completes. If any thread comes on this state that means it cannot ever 
+										run again.</li></ul>
+								<h3 id="10">What is an Applets?</h3>
+								<p><strong>Applets:</strong> These are small java programs.
+								</p>
+								<ul>
+									<li>
+									They can send from one computer to another computer over the internet using the 
+									Applet Viewer that supports java.
+									</li><li>
+									Applets can runs in a Web browser as it is a java program. It can be a fully 
+									functional Java application because it has the entire Java API at its disposal.
+									</li><li>
+									Applets follow the security rules given by the Web browser.
+									</li><li>
+										Applet security is also known as sandbox security.</li></ul>
+								<h3 id="11">What is the Set interface?</h3>
+								<p>A Set interface is collection of element which cannot be duplicated.
+								</p>
+								<ul>
+									<li>
+									The Set interface contains methods inherited from collection.
+									</li><li>
+									It provides methods to access the elements of a finite mathematical set.
+									</li><li>
+									Two Set objects are equal if they contain the same elements.
+									</li><li>
+										It models the mathematical set abstraction.</li></ul>
+								<h3 id="12">What is a HashSet and TreeSet?</h3>
+								<p>The HashSet is an unsorted, unordered Set.</p>
+								<ul>
+									<li>
+									It is Collection set that restrict duplicate elements and also repositioning of 
+									elements.
+									</li><li>
+									It implements the Set interface and extends AbstractSet.
+									</li><li>
+										Uses hash code of the object being inserted.
+										<br>
+									The TreeSet is a Set implemented when we want elements in a sorted order.
+									</li><li>
+										Sorting of element is done according to the natural order of elements or by the 
+										help of comparator provided at creation time.</li></ul>
+								<h3 id="13">How do you decide when to use HashMap and when to use TreeMap and what 
+									is difference between these two?</h3>
+								<p>HashMap is used when we want to perform insertion, deletion, and locate elements 
+									in a Map.</p>
+								<p>TreeMap is used when we want to traverse the elements in a sorted order. 
+									Depending upon the size of collection, adding elements to HashMap is easy. For 
+									sorted elements traversal we can convert the HashMAp into TreeMap.</p>
+								<p>HashMap:</p>
+								<ul>
+									<li>
+									Lets us to have null values and also one null key
+									</li><li>
+									Iterator in the HashMap is Fail-Safe.
+									</li><li>
+										It is Unsynchronized.</li></ul>
+								<p>HashTable:</p>
+								<ul>
+									<li>
+									It does not allow null value as key and value.
+									</li><li>
+										It is not synchronized.</li></ul>
+								<h3 id="14">What is the Comparable interface?</h3>
+								<p>The Comparable interface is used to sort collections and arrays of objects using 
+									the collections.sort() and java.utils. The objects of the class implementing 
+									the Comparable interface can be ordered. All classes implementing the 
+									Comparable interface must implement the compareTo() method that has the return 
+									type as an integer. The signature of the compareTo() method is as follows:</p>
+								<p>int i = object1.compareTo(object2)</p>
+								<ul>
+									<li>
+									If object1 &lt; object2: The value of i returned will be negative.
+									</li><li>
+									If object1 &gt; object2: The value of i returned will be positive.
+									</li><li>
+										If object1 = object2: The value of i returned will be zero.</li></ul>
+								<h3 id="15">When should I use abstract classes and when should I use interfaces?</h3>
+								<p>Use Interface, when:</p>
+								<ul>
+									<li>
+									Design changing frequently or when various implementations only share method 
+									signatures.
+									</li><li>
+										We need some classes to use some methods which we do not want to be included in 
+										the class.</li></ul>
+								<p>Use Abstract Class, when:</p>
+								<ul>
+									<li>
+									Various implementations are of the same kind and use common behavior.
+									</li><li>
+									Enabling with generalized form of abstraction and leave the implementation task 
+									with the inheriting subclass.
+									</li><li>
+										creating planned inheritance hierarchies</li></ul>
+								<h3 id="16">Explain the Polymorphism principle.</h3>
+								<p>The Polymorphism can be referred as one name many forms. It is the ability of 
+									methods to behave differently, depending upon the object who is calling it. 
+									Polymorphism exists in three distinct forms in Java:</p>
+								<ul>
+									<li>
+									Method overloading
+									</li><li>
+									Method overriding through inheritance
+									</li><li>
+										Method overriding through the Java interface</li></ul>
+								<h3 id="17">What are the difference between throw and throws?</h3>
+								<p>The differences are between throw and throws are:</p>
+								<ul>
+									<li>
+									Throw is used to trigger an exception where as throws is used in declaration of 
+									exception.
+									</li><li>
+									Without throws, Checked exception cannot be handled where as checked exception 
+									can be propagated with throws.
+									</li><li>
+									Throw is used inside the method where as throws is used with the method 
+									signature.
+									</li><li>
+										Throw is followed by an instance but throws is followed by class.</li></ul>
+								<h3 id="18">What is difference between preemptive scheduling and time slicing?</h3>
+								<p>Differences between preemptive and time scheduling are:</p>
+								<ul>
+									<li>
+									In Preemptive scheduling the highest priority task executes until it enters the 
+									waiting or dead stated or a higher priority task comes into existence.
+									</li><li>
+										Time slicing, a task executes for a predefined time period and then the pool of 
+										ready tasks. The scheduler then determines which task should execute next, 
+										based on priority and other factor.</li></ul>
+								<h3 id="19">Explain traversing through a collector using Iterator.</h3>
+								<p>Ans. We can access each element in the Collection by using Iterators 
+									irrespective of how they are organized in the collector. Iterator can be 
+									implemented a different way for every Collection. To use an iterator to 
+									traverse through the contents of a collection we do:</p>
+								<ul>
+									<li>
+									Obtain an iterator by calling the collections iterator()method to the start of 
+									the collection.
+									</li><li>
+									Set up a loop that makes a call to hasNext(). Have the loop iterate as long as 
+									hasNext()returns true.
+									</li><li>
+									Within the loop, obtain each element by calling next().
+									</li><li>
+										remove() method is used to remove the current element in the iteration.</li></ul>
+								<h3 id="20">What are the principle concepts of OOPS?</h3>
+								<p>There are four principle concepts upon which object oriented design and 
+									programming rest. They are:</p>
+								<ul>
+									<li>
+										<strong>Abstraction:</strong>
+									Abstraction refers to the act of representing essential features without 
+									including the background details or explanations.
+									</li><li>
+										<strong>Polymorphism:</strong>
+									is the ability to create a variable, a function, or an object that has more 
+									than one form.
+									</li><li>
+										<strong>Inheritance:</strong>
+									Inheritance is the process by which objects of one class acquire the properties 
+									of objects of another class.
+									</li><li>
+										<strong>Encapsulation:</strong> Encapsulation is a technique used for hiding 
+										the properties and behaviors of an object and allowing outside access only as 
+										appropriate. It prevents other objects from directly altering or accessing the 
+										properties or methods of the encapsulated object.</li></ul>
+								<p><strong><em>Core java interview questions for freshers - contributed by Souvik Dutta</em></strong></p>
+								<p><a href="http://careerride.com/core-java-interview-questions-for-freshers.aspx#one">What are the basic 
+										features of java?</a><br>
+									<a href="http://careerride.com/core-java-interview-questions-for-freshers.aspx#two">How java becomes 
+										object oriented?</a><br>
+									<a href="http://careerride.com/core-java-interview-questions-for-freshers.aspx#three">How java becomes 
+										robust?</a><br>
+									<a href="http://careerride.com/core-java-interview-questions-for-freshers.aspx#four">How a Java program 
+										compiles?</a><br>
+									<a href="http://careerride.com/core-java-interview-questions-for-freshers.aspx#five">What is 'public 
+										static void main ( String args[ ] ) ' signifies?</a><br>
+									<a href="http://careerride.com/core-java-interview-questions-for-freshers.aspx#six">What 
+										'System.out.println()' signifies?</a><br>
+									<a href="http://careerride.com/core-java-interview-questions-for-freshers.aspx#seven">What is a variable 
+										in Java program?</a><br>
+									<a href="http://careerride.com/core-java-interview-questions-for-freshers.aspx#eight">What is JVM?</a><br>
+									<a href="http://careerride.com/core-java-interview-questions-for-freshers.aspx#nine">What is bytecode?</a><br>
+									<a href="http://careerride.com/core-java-interview-questions-for-freshers.aspx#ten">What is Java applet?</a></p>
+								<h3 id="one">What are the basic features of java?</h3>
+								<p>The basic features of Java are given below :<br>
+									• Java is simple.<br>
+									• Java provides immense security.<br>
+									• Java provides high portability.<br>
+									• Java provides object oriented programming features<br>
+									• Java provides robustness.<br>
+									• Java is multuthreaded.<br>
+									• Java provides architecture neutrality.
+									<br>
+									• Java is distributed
+									<br>
+									• Java is dynamic.</p>
+								<h3 id="two">How java becomes object oriented?</h3>
+								<p>• Java follows the paradigm of OO programming.<br>
+									• Java follows modular approach.<br>
+									• Java follows the abstraction aspect.<br>
+									• Java follows the OO principle encapsultaion.<br>
+									• Java follows the OO principle polymorphism.<br>
+									• Java follows the OO principle inheritance.</p>
+								<h3 id="three">How java becomes robust?</h3>
+								<p>• Java provides multi-platformed environment.<br>
+									• Java provides high reliability in the design.<br>
+									• Java is a strictly typed language.<br>
+									• Java checks the code at runtime.<br>
+									• Java provides predictablity.<br>
+									• java provides various keywords.</p>
+								<h3 id="four">How a Java program compiles?</h3>
+								<p>• First the source file name must be extended with .java extension. e.g. 
+									Myprog.java<br>
+									• Execute the javac compiler.<br>
+									• javac compiler creates a file called Myprog.class i.e. the bytecode version 
+									of Myprog.java.<br>
+									• The butecode is executed by the Java runtime-systems which is called Java 
+									Virtual Machine (JVM).<br>
+									• JVM is platform dependent.</p>
+								<h3 id="five">What is 'public static void main ( String args[ ] ) ' signifies?</h3>
+								<p>• the access specifier is the 'public' keyword .<br>
+									• 'static' keyword allows main() to be called without instantiating a 
+									particular instance of a class.<br>
+									• 'void' affirns the compiler that no value is returned by main().<br>
+									• 'main()' mathod is called at the beginning of a Java program.<br>
+									• 'String args()' tells a parameter named args,which is an instance array of 
+									class String</p>
+								<h3 id="six">What 'System.out.println()' signifies?</h3>
+								<p>• 'System' is a predefined class .<br>
+									• System class givesacces to the system.<br>
+									• 'out' is the output stream.<br>
+									• 'println' is printing the line on the console.<br>
+									• This is a console output statement.</p>
+								<h3 id="seven">What is a variable in Java program?
+								</h3>
+								<p>• It's a memory location.<br>
+									• The memory location is given some name.<br>
+									• The memory location is being assigned some value.<br>
+									• The value may change of the variable.<br>
+									• The memory location size changes with the type of the variable.</p>
+								<h3 id="eight">What is JVM?</h3>
+								<p>• JVM is the acronym stands for 'Java virtual machine'.<br>
+									• JVM provides the execution environment.<br>
+									• JVM is not platform independent..<br>
+									• JVM is the Java run-time system.<br>
+									• JVM is an interpreter of bytecode.<br>
+									• JVM also makes the sytem secured.
+								</p>
+								<h3 id="nine">What is bytecode?</h3>
+								<p>• Bytecode is an instruction set.<br>
+									• Bytecode extends wiith .class.<br>
+									• 'javac' compiler translates the .java file into .class.<br>
+									• JVM interpretes bytecode.<br>
+									• Bytecode facility makes Java platform-independent.<br>
+									• It also confirms security tothe Java code.</p>
+								<h3 id="ten">What is Java applet?</h3>
+								<p>• Applet is a java program.<br>
+									• It has been designed for transmitting the Java code over the internet.<br>
+									• It is automatically executed by Java-enabled Web Browser.<br>
+									• Applet can repnse to the user input.<br>
+									• Applet is dynamically programmed.&nbsp;<a href="http://careerride.com/Career-Jobs-Interview-Updates.aspx" class="paraMaroonBigger">&nbsp;</a></p>
+								<p>
+									</p><table id="Table7" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tbody><tr>
+											<td><script type="text/javascript"><!--
+google_ad_client = "pub-6836604883057248";
+/* 336x280, created 5/2/09 */
+google_ad_slot = "2342271200";
+google_ad_width = 336;
+google_ad_height = 280;
+//-->
+</script>
+<script type="text/javascript" src="core-java-interview-questions-for-freshers.aspx_files/show_ads.js">
+</script><ins style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px"><ins id="aswift_2_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){w.location.replace(h)}}" id="aswift_2" name="aswift_2" style="left: 0pt; position: absolute; top: 0pt;" frameborder="0" height="280" scrolling="no" width="336"></iframe></ins></ins>
+
+
+<p>
+<a href="http://careerride.com/add-comment.aspx?Page=core-java-interview-questions-for-freshers.aspx" class="comment"><u><i>Write your comment - Share Knowledge and Experience</i></u></a>
+</p>
+<table class="paratitle1" id="dotComment" style="background-color: White; border-color: Black; border-width: 1px; border-style: groove; width: 100%;" border="0" cellpadding="1" cellspacing="1">
+	<tbody><tr style="background-color: White; font-weight: bold; white-space: nowrap;">
+		<td class="listheader">
+						Discussion Board<hr>
+					</td>
+	</tr><tr>
+		<td class="paratitle1">
+						<b>java fresher Intrvw Q's</b>
+						<br><br>
+						its better,but still more informaion based on  index criteria
+						<br><br>
+						Srikanth 10-4-2012 03:50 AM
+						<br><br>
+					</td>
+	</tr><tr style="background-color: Linen; border-width: 1px; border-style: solid;" valign="top">
+		<td class="paratitle1">
+						<b>Java core Q and A</b>
+						<br><br>
+						I m satisfied with question and answer
+						<br><br>
+						Manoj patidar 08-15-2012 08:58 AM
+						<br><br>
+					</td>
+	</tr><tr>
+		<td class="paratitle1">
+						<b>interview question</b>
+						<br><br>
+						this question list is best for fresher preparation
+						<br><br>
+						Hitesh 06-27-2012 05:07 AM
+						<br><br>
+					</td>
+	</tr><tr>
+		<td>&nbsp;</td>
+	</tr>
+</tbody></table>
+</td>
+										</tr>
+									</tbody></table>
+									&nbsp;<br>
+								<p></p>
+								<h3>
+									<table class="paratitle1" id="Table1" border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tbody><tr>
+											<td class="paratitle1" align="left" valign="top" width="70%">
+												<p></p>
+											</td>
+										</tr>
+									</tbody></table>
+								</h3>
+							</td>
+						</tr>
+						<tr>
+							<td class="paratitle" align="left" valign="top" width="64%">
+								<table id="Table8" align="left" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%">
+									<tbody><tr>
+										<td></td>
+									</tr>
+									<tr>
+										<td class="subtitle">&nbsp;
+										</td>
+									</tr>
+								</tbody></table>
+							</td>
+						</tr>
+					</tbody></table>
+				</td>
+				<td height="400" valign="top" width="16%">
+					<!-- google_ad_section_start(weight=ignore) -->
+<table id="Table1" bgcolor="white" cellpadding="0" cellspacing="0">
+      <tbody><tr>
+      	<td style="padding: 0px 5px 10px;">
+	   <table border="0" cellpadding="0" cellspacing="0">
+           <tbody><tr>
+           	<td width="8"><img src="core-java-interview-questions-for-freshers.aspx_files/11.gif" height="8" width="8"></td>
+                <td style="border-top: 1px solid rgb(184, 184, 184); width: 174px;"><img src="core-java-interview-questions-for-freshers.aspx_files/transperent.gif" height="3" width="12"></td>
+                <td align="right" width="8"><img src="core-java-interview-questions-for-freshers.aspx_files/22.gif" height="8" width="8"></td>
+           </tr>
+           <tr align="left">
+                <td colspan="3" style="border-right: 1px solid rgb(184, 184, 184); border-left: 1px solid rgb(184, 184, 184); font-family: Arial,Helvetica,sans-serif; font-size: 12px; font-weight: bold; padding-left: 15px;">Interview questions</td>
+           </tr>
+           <tr align="left">
+                <td colspan="3" style="border-right: 1px solid rgb(184, 184, 184); border-left: 1px solid rgb(184, 184, 184);"><div id="menu4">
+                <ul>
+                        <!-- CSS Tabs -->
+
+<li><a title="Java interview questions - 1" href="http://careerride.com/Java-Interview-Questions.aspx">Java interview questions</a></li>
+<li><a title="Java FAQs" href="http://careerride.com/Java-FAQ.aspx">Java FAQs</a></li> 
+<li><a href="http://careerride.com/Career-Jobs-Interview-Updates.aspx" target="_blank"><b>Download Java/Oracle FAQ</b></a></li>
+<li><a title="Java Test" href="http://careerride.com/test.aspx?type=Java">Test Java skills<font color="red" size="1"> New</font></a></li>
+<li><a title="JDBC Test" href="http://careerride.com/test.aspx?type=JDBC">Test JDBC skills<font color="red" size="1"> New</font></a></li>
+<li><a title="EJB Test" href="http://careerride.com/test.aspx?type=EJB">Test EJB skills<font color="red" size="1"> New</font></a></li>
+<li>&nbsp;</li>
+<li><a title="Java objects, classes &amp; methods interview" href="http://careerride.com/Java-Objects-classes-methods.aspx">Java object, class, method</a></li>
+<li><a title="Java operator interview" href="http://careerride.com/Java-operator.aspx">Java operator</a></li>
+<li><a title="Java variables" href="http://careerride.com/Java-variables.aspx">Java variables</a></li>
+<li><a title="Java overloading and overriding interview" href="http://careerride.com/Java-overloading-overriding.aspx">Java overloading overriding</a></li>
+<li><a title="Java abstract classes &amp; interfaces interview" href="http://careerride.com/Java-abstract-classes-interfaces.aspx">Java abstract classes</a></li>
+<li><a title="Java data types interview" href="http://careerride.com/Java-data-types.aspx">Java data types</a></li>
+<li><a title="Java arrays" href="http://careerride.com/Java-arrays.aspx">Java arrays</a></li>
+<li><a title="Java exception interview" href="http://careerride.com/Java-exception.aspx">Java exception</a></li>
+<li><a title="Java events" href="http://careerride.com/Java-events.aspx">Java events</a></li>
+<li><a title="Java virtual machine interview" href="http://careerride.com/Java-virtual-machine.aspx">Java virtual machine</a></li>
+<li><a title="Java input and output interview" href="http://careerride.com/Java-input-and-output.aspx">Java input and output</a></li>
+<li><a title="Java URL connections interview" href="http://careerride.com/Java-URL-connections.aspx">Java URL connections</a></li>
+<li><a title="Java sockets interview" href="http://careerride.com/Java-Sockets.aspx">Java sockets</a></li>
+<li><a title="JNDI" href="http://careerride.com/JNDI-Interview-Questions.aspx">JNDI</a></li>
+<li><a title="Java applets interview" href="http://careerride.com/Java-applets.aspx">Java applets</a></li>
+<li><a title="Java AWT" href="http://careerride.com/Java-abstract-window-toolkit-AWT.aspx">Java AWT</a></li>
+<li><a title="Java drawing AWT components interview" href="http://careerride.com/Java-drawing-AWT-components.aspx">Java drawing AWT components</a></li>
+<li><a title="Core java interview questions" href="http://careerride.com/Interview-Questions-Core-Java.aspx">Core java</a></li>
+<li><a title="JDBC" href="http://careerride.com/Interview-Questions-Java-JDBC.aspx">JDBC</a></li>
+<li><a title="JSP interview questions" href="http://careerride.com/Interview-Questions-Java-JSP.aspx">JSP</a></li>
+<li><a title="EJB interview questions" href="http://careerride.com/Interview-Questions-Java-EJB.aspx">EJB</a></li>
+<li><a title="J2EE interview questions" href="http://careerride.com/J2EE-Interview-Questions.aspx">J2EE</a></li>
+<li><a title="JNI interview questions" href="http://careerride.com/Interview-Questions-Java-JNI.aspx">JNI</a></li>
+<li><a title="Servlets interview questions" href="http://careerride.com/Interview-Questions-Java-Servlets.aspx">Servlets</a></li>
+<li><a title="Struts interview questions" href="http://careerride.com/Interview-Questions-Java-Struts.aspx">Struts</a></li>
+<li><a title="Java threading interview questions" href="http://careerride.com/Interview-Questions-Java-Threading.aspx">Java threading</a></li>
+<li><a title="J2ME interview questions" href="http://careerride.com/J2ME-Interview-Questions.aspx">J2ME</a></li>
+<li><a title="JMS interview questions" href="http://careerride.com/JMS-Interview-Questions.aspx">JMS</a></li>
+<li><a title="Java web services interview questions" href="http://careerride.com/Interview-Questions-Java-Web-services.aspx">Java web services</a></li>
+<li><a title="RMI interview questions" href="http://careerride.com/RMI-Interview-Questions.aspx">RMI</a></li>
+<li><a href="http://careerride.com/Interview-Questions-Java-Internationalization-localization.aspx">Internationalization</a></li>
+<li><a title="JavaScript interview questions" href="http://careerride.com/Interview-Questions-JavaScript.aspx">JavaScript</a></li>
+<li><a title="EJB Architecture" href="http://careerride.com/EJB-Architecture.aspx">EJB Architecture</a></li>
+<li><a title="Spring interview" href="http://careerride.com/Spring-Interview-Question.aspx">Spring</a></li>
+<li><a title="Java Transaction API – JTA" href="http://careerride.com/Java-Transaction-API-Interview-Questions.aspx">Java Transaction API – JTA</a></li>
+<li><a title="JBOSS interview" href="http://careerride.com/JBOSS-Interview-Questions.aspx">JBOSS</a></li>
+<li><a href="http://careerride.com/Java-Transaction-Services-Interview-Questions.aspx">Java transaction services, JTS</a></li>
+<li><a title="Java GUI Framework interview" href="http://careerride.com/Java-GUI-Framework-Interview-Questions.aspx">Java GUI Framework interview</a></li>
+<li><a title="SWT/JFace interview" href="http://careerride.com/SWT-JFace-Interview-Questions.aspx">SWT/JFace interview</a></li>
+<li><a href="http://careerride.com/JFace-and-MVC.aspx">MVC and Jface</a></li>
+<li><a title="JavaServer Faces interview" href="http://careerride.com/Java-Server-Faces-Interview.aspx">JavaServer Faces</a></li>
+<li><a title="Hibernate interview" href="http://careerride.com/Hibernate-Interview-Questions.aspx">Hibernate interview</a></li>
+<li><a title="JAAS interview" href="http://careerride.com/Java-Authentication-Authorization-Service-JAAS-Interview.aspx">JAAS</a></li>
+<li><a title="JavaMail interview" href="http://careerride.com/JavaMail-Interview-Questions.aspx">JavaMail interview</a></li>
+<li><a title="Tomcat interview" href="http://careerride.com/Tomcat-Interview-Questions.aspx">Tomcat</a></li>
+<li><a title="MIDP interview" href="http://careerride.com/Mobile-information-device-profile.aspx">MIDP interview</a></li>
+<li><a title="Weblogic interview" href="http://careerride.com/Weblogic-Interview-Questions.aspx">Weblogic interview</a></li>
+<li><a title="Ant interview" href="http://careerride.com/Ant-Interview-Questions.aspx">Ant interview</a></li>
+<li><a title="Websphere interview" href="http://careerride.com/Websphere-Interview-Questions.aspx">Websphere interview</a></li>
+<li><a title="Ruby interview" href="http://careerride.com/Ruby-Interview-Questions.aspx">Ruby interview</a></li>
+<li><a title="jQuery interview" href="http://careerride.com/jQuery-Interview-Questions.aspx">jQuery interview</a></li>
+<li><a title="Aspect Oriented Programming, AOP" href="http://careerride.com/Aspect-Oriented-Programming-AOP.aspx">Aspect Oriented Programming</a></li>
+<li><a title="Java Design Patterns" href="http://careerride.com/Java-Design-Patterns-Interview-Questions.aspx">Java design patterns</a></li>
+<li><a title="Java localization" href="http://careerride.com/java-localization.aspx">Java localization</a></li>
+
+
+                      </ul>
+                    </div></td>
+                  </tr>
+                  <tr>
+													<td><img src="core-java-interview-questions-for-freshers.aspx_files/44.gif" height="8" width="8"></td>
+													<td style="border-bottom: 1px solid rgb(184, 184, 184);"><img src="core-java-interview-questions-for-freshers.aspx_files/transperent.gif" height="3" width="12"></td>
+													<td><img src="core-java-interview-questions-for-freshers.aspx_files/33.gif" height="8" width="8"></td>
+												</tr>
+
+		</tbody></table>
+</td></tr></tbody></table>
+
+<!--– google_ad_section_end –--></td>
+			</tr>
+		</tbody></table>
+		<table class="paratitle1" id="Table1" align="center" bgcolor="white" border="0" cellpadding="0" cellspacing="0" width="945">
+	<tbody><tr>
+		<td style="padding-right: 5px; padding-left: 5px;" bgcolor="#ffffff" valign="top">
+			<table id="Table2" align="center" border="0" cellpadding="0" cellspacing="0" width="945">
+				<tbody><tr>
+					<td valign="top" width="8"><img src="core-java-interview-questions-for-freshers.aspx_files/11f.gif" height="8" width="8"></td>
+					<td style="border-top: 1px solid rgb(184, 184, 184); background-color: rgb(225, 225, 225);"><img src="core-java-interview-questions-for-freshers.aspx_files/transperent.gif" height="3" width="934"></td>
+					<td align="right" width="8"><img src="core-java-interview-questions-for-freshers.aspx_files/22f.gif" height="8" width="8"></td>
+				</tr>
+				<tr>
+					<td style="border-right: 1px solid rgb(184, 184, 184); background-image: url(&quot;images/ftbg.gif&quot;); border-left: 1px solid rgb(184, 184, 184); background-repeat: repeat-x;" colspan="3">
+						<table id="Table3" border="0" cellpadding="10" cellspacing="0" width="945">
+							<tbody><tr>
+								<td valign="top">
+									<table id="Table4" border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tbody><tr>
+											<td>
+												<ul id="footlist">
+													<li>
+														<a href="http://careerride.com/Oracle-Database.aspx">Oracle</a>
+													</li><li>
+														<a href="http://careerride.com/Database-frequently-asked-questions.aspx">Database</a>
+													</li><li>
+														<a href="http://careerride.com/Microsoft-technologies-interview-questions.aspx">Microsoft</a>
+													</li><li>
+														<a href="http://careerride.com/Java-and-advanced-java-interview-questions.aspx">Java</a>
+													</li>
+												</ul>
+											</td>
+											<td>
+												<ul id="footlist">
+													<li>
+														<a href="http://careerride.com/Software-design-analysis-interview.aspx">Design analysis</a>
+													</li><li>
+														<a href="http://careerride.com/Networking-frequently-asked-questions.aspx">Networking</a>
+													</li><li>
+														<a href="http://careerride.com/Operating-system-frequently-asked-questions.aspx">Operating system</a>
+													</li><li>
+														<a href="http://careerride.com/Data-warehousing-frequently-asked-questions.aspx">Data warehousing</a>
+													</li>
+												</ul>
+											</td>
+											<td>
+												<ul id="footlist">
+													<li>
+														<a href="http://careerride.com/Programming-interview-questions.aspx">Programming</a>
+													</li><li>
+														<a href="http://careerride.com/Web-interview-questions.aspx">Web</a>
+													</li><li>
+														<a href="http://careerride.com/Testing-frequently-asked-questions.aspx">Testing</a>
+													</li><li>
+														<a href="http://careerride.com/management-accounting-interview-questions.aspx">Management accounting</a>
+													</li>
+												</ul>
+											</td>
+											<td>
+												<ul id="footlist">
+													<li>
+														<a href="http://careerride.com/application-server-interview-questions.aspx">Application server</a>
+													</li><li>
+														<a href="http://careerride.com/mainframe-interview-questions.aspx">Mainframe</a>
+													</li><li>
+														<a href="http://careerride.com/Programming-language-interview-questions.aspx">Programming language</a>
+													</li><li>
+														<a href="http://careerride.com/wireless-communication-interview-questions.aspx">Wireless communication</a>
+													</li>
+												</ul>
+											</td>
+											<td>
+												<ul id="footlist">
+													<li>
+														<a href="http://careerride.com/data-communication-and-broadband-interview-questions.aspx">Data 
+															communication and broadband</a>
+													</li><li>
+														<a href="http://careerride.com/mobile-application-interview-questions.aspx">Mobile Application</a>
+													</li><li>
+														<a href="http://careerride.com/ui-designer-interview-questions.aspx">UI Designer</a>
+													</li><li>
+														<a href="http://careerride.com/embedded-systems-interview-questions.aspx">Embedded Systems</a>
+													</li>
+												</ul>
+											</td>
+											<td>
+												<ul id="footlist">
+													<li>
+														<a href="http://careerride.com/oracle-apps-interview-questions.aspx">Oracle apps</a>
+													</li><li>
+														<a href="http://careerride.com/sap-interview-questions.aspx">SAP</a>
+													</li><li>
+														<a href="http://careerride.com/peoplesoft-interview-questions.aspx">Peoplesoft</a>
+													</li><li>
+														<a href="http://careerride.com/financial-management-interview-questions.aspx">Financial management</a>
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="7" align="center">
+												<script type="text/javascript"><!--
+google_ad_client = "pub-6836604883057248";
+/* 728x90, created 4/11/10 */
+google_ad_slot = "6142418198";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+												</script>
+												<script type="text/javascript" src="core-java-interview-questions-for-freshers.aspx_files/show_ads.js">
+												</script><ins style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px"><ins id="aswift_3_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){w.location.replace(h)}}" id="aswift_3" name="aswift_3" style="left: 0pt; position: absolute; top: 0pt;" frameborder="0" height="90" scrolling="no" width="728"></iframe></ins></ins>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="7" align="right"><a class="abtus_btn" href="http://careerride.com/Index.html">Home</a> | <a class="abtus_btn" href="http://careerride.com/job-skills.aspx">
+													Want a Job? Submit Key Skills</a> | <a class="abtus_btn" href="http://careerride.com/profile-search.aspx">My 
+													key skills</a> | <a class="abtus_btn" href="http://careerride.com/Aboutus.aspx">About us</a> | <a class="abtus_btn" href="http://careerride.com/SiteMap.aspx">
+													Sitemap</a> | <a class="abtus_btn" href="http://careerride.com/Contactus.aspx">Contact us</a></td>
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+						</tbody></table>
+					</td>
+				</tr>
+				<tr>
+					<td><img src="core-java-interview-questions-for-freshers.aspx_files/44.gif" height="8" width="8"></td>
+					<td style="border-bottom: 1px solid rgb(184, 184, 184);"><img src="core-java-interview-questions-for-freshers.aspx_files/transperent.gif" height="3" width="934"></td>
+					<td align="right"><img src="core-java-interview-questions-for-freshers.aspx_files/33.gif" height="8" width="8"></td>
+				</tr>
+			</tbody></table>
+		</td>
+	</tr>
+			<tr>
+				<td class="footer" align="center" bgcolor="#ffffff">Copyright © 2008 - 2012 
+					CareerRide.com. All rights reserved. <a class="abtus_btn" href="http://careerride.com/Termsofuse.aspx"><strong>
+							Terms of use</strong> </a>&nbsp;|&nbsp;<a href="http://www.facebook.com/nishantsingh21" target="_blank">
+						<b><strong>Follow us on Facebook!</strong></b></a><b>
+					<br>
+					<br>
+					<div style="FONT-SIZE: 11px"><b>Bookmark to:</b>
+					</div>
+					<a rel="nofollow" style="text-decoration: none;" href="#" target="_blank" onclick="this.setAttribute('href', 'http://www.facebook.com/sharer.php?u='+encodeURIComponent(location.href)+'&amp;t='+encodeURIComponent(document.title))" title="Bookmark to: Facebook"><img style="padding-bottom: 1px;" src="core-java-interview-questions-for-freshers.aspx_files/facebook_trans.gif" alt="Bookmark to: Facebook" name="Facebook" id="Facebook" border="0"></a>&nbsp; <a rel="nofollow" style="text-decoration: none;" href="#" target="_blank" onclick="this.setAttribute('href', 'http://twitter.com/home?status='+encodeURIComponent(location.href)+'&amp;t='+encodeURIComponent(document.title))" title="Bookmark to: Twitter"><img style="padding-bottom: 1px;" src="core-java-interview-questions-for-freshers.aspx_files/twitter_icon.gif" alt="Bookmark to: Twitter" name="Twitter" id="Twitter" border="0"> </a>&nbsp; <a rel="nofollow" style="text-decoration: none;" href="#" target="_blank" onclick="this.setAttribute('href', 'http://del.icio.us/post?v=2&amp;url='+encodeURIComponent(location.href)+'&amp;notes=&amp;tags=&amp;title='+encodeURIComponent(document.title))" title="Bookmark to: Del.icio.us"><img style="padding-bottom: 1px;" src="core-java-interview-questions-for-freshers.aspx_files/del_trans.gif" alt="Bookmark to: Del.icio.us" name="Delicious" id="Delicious" border="0"> </a>&nbsp; <a rel="nofollow" style="text-decoration: none;" href="#" target="_blank" onclick="this.setAttribute('href', 'http://www.google.com/bookmarks/mark?op=add&amp;hl=en&amp;bkmk='+encodeURIComponent(location.href)+'&amp;annotation=&amp;labels=&amp;title='+encodeURIComponent(document.title))" title="Bookmark to: Google"><img style="padding-bottom: 1px;" src="core-java-interview-questions-for-freshers.aspx_files/google_trans.gif" alt="Bookmark to: Google" name="Google" id="Google" border="0"> </a>&nbsp; <a rel="nofollow" style="text-decoration: none;" href="#" target="_blank" onclick="this.setAttribute('href', 'http://digg.com/submit?phase=2&amp;url='+encodeURIComponent(location.href)+'&amp;bodytext=&amp;tags=&amp;title='+encodeURIComponent(document.title))" title="Bookmark to: Digg"><img style="padding-bottom: 1px;" src="core-java-interview-questions-for-freshers.aspx_files/digg.gif" alt="Bookmark to: Digg" name="Digg" id="Digg" border="0"> </a>&nbsp; <a rel="nofollow" style="text-decoration: none;" href="#" target="_blank" onclick="this.setAttribute('href', 'http://www.stumbleupon.com/submit?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title))" title="Bookmark to: StumbleUpon"><img style="padding-bottom: 1px;" src="core-java-interview-questions-for-freshers.aspx_files/stumbleupon.gif" alt="Bookmark to: StumbleUpon" name="StumbleUpon" id="StumbleUpon" border="0">&nbsp; </a>
+					<br><br>
+				</b></td>
+			</tr>
+
+	<tr>
+		<td>&nbsp;
+		</td>
+	</tr>
+	<tr>
+		<td>&nbsp;
+		</td>
+	</tr>
+	<tr>
+		<td class="pos_fixed" style="padding: 5px 0px; background-image: url(&quot;images/ybg1.gif&quot;); width: 960px;" align="center"><a class="next" href="http://careerride.com/Online-practice-test.aspx"> <font color="red"><b>Placement 
+						practice test:</b></font> Java | SAP | .NET | Oracle | Sql Server | QA 
+				| Aptitude | Networking | All Skills</a>
+		</td>
+	</tr>
+	
+</tbody></table>
+		<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script><script src="core-java-interview-questions-for-freshers.aspx_files/ga.js" type="text/javascript"></script>
+		<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3281125-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+		</script>
+	
+
+</body></html>

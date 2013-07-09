@@ -1,0 +1,18 @@
+<question id="1">
+	<answers>
+		<answer-name>Java is a programing language</answer-name>
+		<id>101</id>
+		
+	</answers>
+	<answers>
+		<answer-name>Java is a platform</answer-name>
+		<id>102</id>
+		
+	</answers>
+	<answers>
+		<answer-name>Java is a platform independent language</answer-name>
+		<id>103</id>
+		
+	</answers>
+	<question-name>What is java</question-name>
+</question>
